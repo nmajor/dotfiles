@@ -53,6 +53,15 @@ set nowrap                " don't wrap text
 
 " To install Vundle run this:
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+" To initiate Vundle run this:
+" vim +BundleInstall +qall
+
+
+" Folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
 
 " Set colorscheme to AWESOME!
 
