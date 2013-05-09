@@ -12,6 +12,9 @@ files="bashrc vimrc "    # list of files/folders to symlink in homedir
 
 ##########
 
+mv ~/.vim ~/.vim_old 2>/dev/null
+mv ./vim ~/.vim
+
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
 mkdir -p $olddir

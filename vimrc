@@ -27,16 +27,16 @@ Bundle 'tpope/vim-fugitive'
 
 
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on
 
+set mouse=nicr
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
-colorscheme desert        " set colorscheme
-set number                " show line numbers
+colorscheme default        " set colorscheme
+"set number                " show line numbers
 set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
 set nohlsearch            " Don't continue to highlight searched phrases.
