@@ -58,12 +58,13 @@ set nowrap                " don't wrap text
 
 
 " Folding settings
-set foldmarker={,}
-set foldmethod=marker  "fold based on marker
-" set foldmethod=indent   "fold based on indent
+" set foldmarker={,}
+set foldmethod=marker  "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
+let perl_fold=1
+let perl_fold_blocks=1
 
 " Set colorscheme to AWESOME!
 
