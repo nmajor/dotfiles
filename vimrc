@@ -29,7 +29,14 @@ Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
 
-set mouse=nicr
+set foldmethod=marker  "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+let perl_fold=1
+let perl_fold_blocks=1
+
+set mouse=a
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set t_Co=256              " enable 256-color mode.
@@ -38,7 +45,7 @@ colorscheme default        " set colorscheme
 "set number                " show line numbers
 set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
-set nohlsearch            " Don't continue to highlight searched phrases.
+" set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
 set ruler                 " Always show info along bottom.
@@ -59,12 +66,7 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 
 " Folding settings
 " set foldmarker={,}
-set foldmethod=marker  "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
-let perl_fold=1
-let perl_fold_blocks=1
+
 
 " Set colorscheme to AWESOME!
 
