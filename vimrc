@@ -30,7 +30,7 @@ Bundle 'tpope/vim-fugitive'
 filetype plugin indent on
 
 set foldmethod=marker  "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
+set foldnestmax=1      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 let perl_fold=1
